@@ -1,0 +1,24 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="45%" stop-color="#111118" />
+      <stop offset="100%" stop-color="#1f1f2b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f7f5f2" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#f7f5f2" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#bg)" />
+  <rect x="80" y="420" width="1040" height="4" fill="url(#accent)" />
+  <text x="80" y="230" fill="#f7f5f2" font-family="'Instrument Serif', 'Times New Roman', serif" font-size="120" font-weight="400" letter-spacing="4">
+    KRISHNA
+  </text>
+  <text x="84" y="300" fill="#d1d5db" font-family="'Geist', 'Inter', sans-serif" font-size="32" letter-spacing="2">
+    full-stack engineer · ai-native products · motion-first ux
+  </text>
+  <text x="84" y="360" fill="#9ca3af" font-family="'Geist', 'Inter', sans-serif" font-size="24">
+    building immersive tools with next.js, bun, drizzle & framer motion
+  </text>
+</svg>
