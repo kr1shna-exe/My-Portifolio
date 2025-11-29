@@ -10,7 +10,9 @@ import { ProjectCard } from "@/components/cards/project-card";
 import { cn } from "@/lib/utils";
 
 export function ProjectsSection() {
-  const [activeSlug, setActiveSlug] = useState(projects[0]?.slug ?? null);
+  const [activeSlug, setActiveSlug] = useState<string | null>(
+    projects[0]?.slug ?? null
+  );
   const activeProject = projects.find((project) => project.slug === activeSlug);
 
   return (
@@ -26,10 +28,14 @@ export function ProjectsSection() {
             {projects.map((project) => {
               const isActive = project.slug === activeSlug;
               return (
-                <li key={project.slug}>
+                <li key={project.slug} className="space-y-4">
                   <button
                     type="button"
-                    onClick={() => setActiveSlug(project.slug)}
+                    onClick={() => {
+                      setActiveSlug((current) =>
+                        current === project.slug ? null : project.slug
+                      );
+                    }}
                     className={cn(
                       "group flex w-full cursor-pointer items-center justify-between rounded-3xl border border-[var(--border)] bg-[var(--surface)] px-5 py-4 text-left transition",
                       isActive && "ring-2 ring-white/20"
@@ -58,12 +64,26 @@ export function ProjectsSection() {
                       <ArrowRight className="size-4" aria-hidden />
                     </motion.span>
                   </button>
+                  <AnimatePresence initial={false}>
+                    {isActive && (
+                      <motion.div
+                        key={`mobile-preview-${project.slug}`}
+                        className="lg:hidden"
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -8 }}
+                        transition={{ duration: 0.25, ease: "easeOut" }}
+                      >
+                        <ProjectCard project={project} />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </li>
               );
             })}
           </ul>
         </div>
-        <div className="relative flex min-h-[420px] flex-col">
+        <div className="relative hidden min-h-[420px] flex-col lg:flex">
           <AnimatePresence mode="wait">
             {activeProject && (
               <motion.div
