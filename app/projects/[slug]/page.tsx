@@ -69,21 +69,6 @@ export default function ProjectDetail({ params }: ProjectPageProps) {
         />
       </div>
 
-      <div className="grid gap-4 rounded-3xl border border-dashed border-white/10 p-6 text-sm text-slate-300 md:grid-cols-2">
-        <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-stone-400">
-            Problem
-          </p>
-          <p className="mt-2">{project.problem}</p>
-        </div>
-        <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-stone-400">
-            Outcome
-          </p>
-          <p className="mt-2">{project.outcome}</p>
-        </div>
-      </div>
-
       <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
         <h2 className="text-xl font-semibold text-white">
           Stack
