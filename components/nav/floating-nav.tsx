@@ -111,55 +111,61 @@ export function FloatingNav() {
 
   return (
     <>
-      <div
-        className="animate-navReveal fixed inset-x-4 top-4 z-50 mx-auto flex max-w-4xl items-center justify-between rounded-full border border-white/10 bg-black/30 px-3 py-2 text-sm text-slate-200 shadow-lg shadow-black/40 backdrop-blur-[2px] backdrop-filter"
-        aria-label="Site navigation"
-      >
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
-          {navItems.map((item) => {
-            const isActive = activeSection === item.id;
-            return (
-              <Link
-                key={item.id}
-                href={item.href}
-                target="_self"
-                onClick={(event) => {
-                  event.preventDefault();
-                  handleNavPress(item.id);
-                }}
-                className={cn(
-                  "relative flex h-9 items-center rounded-full px-4 font-medium capitalize text-slate-400 transition-colors duration-300",
-                  isActive && "text-white"
-                )}
-              >
-                <span className="mr-1 text-slate-400">/</span>
-                {item.label}
-                {isActive && (
-                  <motion.span
-                    aria-hidden
-                    layoutId="navHighlight"
-                    className="absolute inset-0 -z-10 hidden rounded-full bg-white/10 sm:block"
-                    transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                  />
-                )}
-              </Link>
-            );
-          })}
-        </nav>
+      <div className="hidden md:block">
+        <div
+          className="animate-navReveal fixed inset-x-4 top-4 z-50 mx-auto flex max-w-4xl items-center justify-between rounded-full border border-white/10 bg-black/30 px-3 py-2 text-sm text-slate-200 shadow-lg shadow-black/40 backdrop-blur-[2px] backdrop-filter"
+          aria-label="Site navigation"
+        >
+          <nav className="flex items-center gap-1" aria-label="Primary">
+            {navItems.map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <Link
+                  key={item.id}
+                  href={item.href}
+                  target="_self"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    handleNavPress(item.id);
+                  }}
+                  className={cn(
+                    "relative flex h-9 items-center rounded-full px-4 font-medium capitalize text-slate-400 transition-colors duration-300",
+                    isActive && "text-white"
+                  )}
+                >
+                  <span className="mr-1 text-slate-400">/</span>
+                  {item.label}
+                  {isActive && (
+                    <motion.span
+                      aria-hidden
+                      layoutId="navHighlight"
+                      className="absolute inset-0 -z-10 hidden rounded-full bg-white/10 sm:block"
+                      transition={{
+                        type: "spring",
+                        stiffness: 350,
+                        damping: 30,
+                      }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
+          </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
-          {SOCIAL_LINKS.map((social) => (
-            <a
-              key={social.label}
-              href={social.href}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="group inline-flex items-center gap-2 rounded-full border border-[var(--border)] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-300 transition hover:bg-white/10 hover:text-white"
-            >
-              {social.label}
-              <ArrowUpRight className="size-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-            </a>
-          ))}
+          <div className="flex items-center gap-2">
+            {SOCIAL_LINKS.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="group inline-flex items-center gap-2 rounded-full border border-[var(--border)] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-300 transition hover:bg-white/10 hover:text-white"
+              >
+                {social.label}
+                <ArrowUpRight className="size-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 

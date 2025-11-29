@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       <FloatingNav />
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-16 px-4 pb-16 pt-34 sm:px-6 lg:px-8">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-16 px-4 pb-16 pt-16 md:pt-34 sm:px-6 lg:px-8">
         <IntroSection />
         <ExperienceSection />
         <ProjectsSection />

@@ -73,6 +73,12 @@ body {
     opacity: 0.45;
   }
 
+  @media (max-width: 768px) {
+    .section-heading::after {
+      display: none;
+    }
+  }
+
   @keyframes navReveal {
     from {
       opacity: 0;
