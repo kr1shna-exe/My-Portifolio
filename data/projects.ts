@@ -20,7 +20,7 @@ export const projects: Project[] = [
     category: "AI",
     tech: ["Next.js", "Bun", "Drizzle", "Tailwind"],
     image: "/CodeBoss.png",
-    links: [{ label: "Visit site", href: "https://codeboss-one.vercel.app/" }],
+    links: [{ label: "Visit site", href: "https://codeboss-one.kr1shna.site" }],
     repo: "https://github.com/Kr1shna-exe/CodeBoss",
   },
   {
@@ -32,8 +32,20 @@ export const projects: Project[] = [
     category: "AI",
     tech: ["React", "Framer Motion", "Contentful"],
     image: "/Vision2React.png",
-    links: [{ label: "View site", href: "https://vision2react.vercel.app/" }],
+    links: [{ label: "View site", href: "https://vision2react.kr1shna.site" }],
     repo: "https://github.com/kr1shna-exe/Vision2React",
+  },
+  {
+    slug: "memora",
+    title: "Memora",
+    description:
+      "An AI-powered memory engine that learns from conversations using a three-tier memory architecture (episodic, semantic, procedural) with Qdrant vector search to provide personalized, context-aware assistance.",
+    status: "Live",
+    category: "AI",
+    tech: ["Next.js", "FastAPI", "Qdrant", "PostgreSQL", "LangChain"],
+    image: "/Memora.png",
+    links: [{ label: "Visit site", href: "https://memora.kr1shna.site" }],
+    repo: "https://github.com/kr1shna-exe/Memora",
   },
   {
     slug: "n8n",
@@ -45,7 +57,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "Postgres", "D3.js"],
     image: "/New_N8N.png",
     links: [
-      { label: "Visit site", href: "https://n8-n-web.vercel.app/signin" },
+      { label: "Visit site", href: "https://n8n.kr1shna.site" },
     ],
     repo: "https://github.com/kr1shna-exe/N8N",
   },
@@ -70,7 +82,7 @@ export const projects: Project[] = [
     category: "AI",
     tech: ["Next.js", "Postgres", "D3.js"],
     image: "/TrimFit.png",
-    links: [{ label: "Visit site", href: "https://trim-fit.vercel.app/" }],
+    links: [{ label: "Visit site", href: "https://trimfit.kr1shna.site/" }],
     repo: "https://github.com/kr1shna-exe/TrimFit",
   },
   {
@@ -82,7 +94,7 @@ export const projects: Project[] = [
     category: "AI",
     tech: ["Next.js", "Postgres", "D3.js"],
     image: "/Twisense.png",
-    links: [{ label: "Visit site", href: "https://twisense.vercel.app/" }],
+    links: [{ label: "Visit site", href: "https://twisense.kr1shna.site/" }],
     repo: "https://github.com/kr1shna-exe/TWISENSE",
   },
 ];
