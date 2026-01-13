@@ -24,18 +24,6 @@ export const projects: Project[] = [
     repo: "https://github.com/Kr1shna-exe/CodeBoss",
   },
   {
-    slug: "vision2react",
-    title: "Vision2React",
-    description:
-      "Vision2React is an automated design-to-code platform that converts Figma designs into production-ready Nextjs components by using AI-powered parallel agentic workers to generate pixel-perfect code",
-    status: "Live",
-    category: "AI",
-    tech: ["React", "Framer Motion", "Contentful"],
-    image: "/Vision2React.png",
-    links: [{ label: "View site", href: "https://vision2react.kr1shna.site" }],
-    repo: "https://github.com/kr1shna-exe/Vision2React",
-  },
-  {
     slug: "memora",
     title: "Memora",
     description:
@@ -46,6 +34,18 @@ export const projects: Project[] = [
     image: "/Memora.png",
     links: [{ label: "Visit site", href: "https://memora.kr1shna.site" }],
     repo: "https://github.com/kr1shna-exe/Memora",
+  },
+  {
+    slug: "vision2react",
+    title: "Vision2React",
+    description:
+      "Vision2React is an automated design-to-code platform that converts Figma designs into production-ready Nextjs components by using AI-powered parallel agentic workers to generate pixel-perfect code",
+    status: "Live",
+    category: "AI",
+    tech: ["React", "Framer Motion", "Contentful"],
+    image: "/Vision2React.png",
+    links: [{ label: "View site", href: "https://vision2react.kr1shna.site" }],
+    repo: "https://github.com/kr1shna-exe/Vision2React",
   },
   {
     slug: "n8n",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     category: "AI",
     tech: ["Next.js", "Postgres", "D3.js"],
     image: "/TrimFit.png",
-    links: [{ label: "Visit site", href: "https://trimfit.kr1shna.site/" }],
+    links: [{ label: "Visit site", href: "https://trimfit.kr1shna.site" }],
     repo: "https://github.com/kr1shna-exe/TrimFit",
   },
   {
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     category: "AI",
     tech: ["Next.js", "Postgres", "D3.js"],
     image: "/Twisense.png",
-    links: [{ label: "Visit site", href: "https://twisense.kr1shna.site/" }],
+    links: [{ label: "Visit site", href: "https://twisense.kr1shna.site" }],
     repo: "https://github.com/kr1shna-exe/TWISENSE",
   },
 ];
