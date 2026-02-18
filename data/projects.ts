@@ -20,7 +20,7 @@ export const projects: Project[] = [
     category: "AI",
     tech: ["Next.js", "Bun", "Drizzle", "Tailwind"],
     image: "/CodeBoss.png",
-    links: [{ label: "Visit site", href: "https://codeboss-one.kr1shna.site" }],
+    links: [{ label: "Visit site", href: "https://codeboss.kr1shna.site" }],
     repo: "https://github.com/Kr1shna-exe/CodeBoss",
   },
   {
