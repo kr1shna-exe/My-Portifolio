@@ -11,13 +11,25 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
+    company: "CompanyInsights",
+    role: "Founding AI/ML Engineer",
+    start: "March 2025",
+    end: "Present",
+    location: "Remote",
+    summary:
+      "Leading the design and development of AI-native systems powering CompanyInsights.ai, building agentic workflows, retrieval pipelines and scalable LLM infrastructure to transform unstructured business data into actionable insights.",
+    link: "https://companyinsights.ai",
+    highlights: [
+    ],
+  },
+  {
     company: "Springreen",
     role: "Full-Stack Engineer",
     start: "Oct 2024",
     end: "Feb 2025",
     location: "Remote",
     summary:
-      "Produced ApeHR’s marketing experience so prospects can see—in one scroll—how the platform turns manual hiring into an automated, insight-led workflow.",
+      "Produced ApeHR’s marketing experience so prospects can see-in one scroll-how the platform turns manual hiring into an automated, insight-led workflow.",
     link: "https://acetrumpets.vercel.app",
     highlights: [
       "Translated stakeholder research into interactive KPI stories (survey stats, hiring funnels, ATS benchmarks) ",
