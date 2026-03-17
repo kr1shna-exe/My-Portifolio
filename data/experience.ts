@@ -13,7 +13,7 @@ export const experience: ExperienceItem[] = [
   {
     company: "CompanyInsights",
     role: "Founding AI/ML Engineer",
-    start: "March 2025",
+    start: "March 2026",
     end: "Present",
     location: "Remote",
     summary:
